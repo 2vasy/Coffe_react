@@ -1,6 +1,6 @@
 import Routes from './Routes';
-import Header from './components/Header';
-import Footer from './components/Footer'
+import Header from './components/header/header';
+import Footer from './components/footer/footer'
 import './App.css';
 
 

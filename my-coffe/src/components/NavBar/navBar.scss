@@ -1,0 +1,19 @@
+nav{
+  display: flex;
+  height: 40px;
+  padding: 40px 0px 0px 100px;
+}
+ul {
+  display: flex;
+  justify-content: start;
+  list-style-type: none;
+  gap: 20px;
+  padding:0px;
+  li{
+    a{
+      text-decoration: none;
+      color:#fff;
+    }
+
+  }
+}

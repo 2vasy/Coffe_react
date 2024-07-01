@@ -1,0 +1,50 @@
+
+header {
+  background: url('../../assets/img/backgrounds/MainBg.png') no-repeat center center fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 640px;
+
+  h1 {
+    color:#fff;
+    text-align: center;
+    margin-top: 180px;
+  }
+
+  .logo_Line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+    span {
+      height: 1px;
+      width: 60px;
+      background-color:#fff
+    }
+  }
+
+  .text_title{
+    font-size: 24px;
+    color:#fff;
+    text-align: center;
+  }
+
+  button{
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color:#fff;
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: transparent;
+    height: 30px;
+    width: 120px;
+    font-family: Marienda;
+    font-size: 14px;
+  }
+
+}
+
