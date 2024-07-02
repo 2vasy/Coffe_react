@@ -2,7 +2,7 @@ import "./navBar.scss";
 function NavBar(props) {
   return (
     <>
-      <nav>
+      <nav className="nav_bar">
         <div>
           <a href="/">
             <svg

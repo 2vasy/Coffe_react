@@ -1,6 +1,7 @@
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
-import CoffeBeans from "../../components/UI/coffeeBeans3_black";
+import CoffeBeans from "../../components/UI/coffeeBeans3";
+import CardC from "../../assets/img/cards/815O9ktyfUL.png"
 import "./HomePage.scss";
 function HomePage() {
   return (
@@ -8,7 +9,7 @@ function HomePage() {
       <Header />
       <main>
         <h1 className="title_about">About Us</h1>
-        <CoffeBeans />
+        <CoffeBeans color="black" />
         <div className="text_about">
           <p>
             Extremity sweetness difficult behaviour he of. On disposal of as
@@ -29,12 +30,26 @@ function HomePage() {
         </div>
         <div className="cards_items">
           <div className="cards_items_title">Our best</div>
-          <figure className="figure">
-            <img src="" className="figure-img img-fluid rounded" alt="..." />
-            <figcaption className="figure-caption text-right">
-              A caption for the above image.
-            </figcaption>
-          </figure>
+          <div className="cards_wrapper">
+            <figure className="figure">
+              <img src={CardC} className="figure-img img-fluid rounded" alt="..." />
+              <figcaption className="figure-caption text-right">
+                A caption for the above image.
+              </figcaption>
+            </figure>
+            <figure className="figure">
+              <img src={CardC} className="figure-img img-fluid rounded" alt="..." />
+              <figcaption className="figure-caption text-right">
+                A caption for the above image.
+              </figcaption>
+            </figure>
+            <figure className="figure">
+              <img src={CardC} className="figure-img img-fluid rounded" alt="..." />
+              <figcaption className="figure-caption text-right">
+                A caption for the above image.
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </main>
       <Footer />
