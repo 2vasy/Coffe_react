@@ -1,9 +1,10 @@
+import NavBar from '../NavBar/navBar';
 import './footer.scss';
 
 function Footer(){
   return (
     <footer>
-      Hallo im Footer
+      <NavBar fill="black"/>
     </footer>
   )
 }

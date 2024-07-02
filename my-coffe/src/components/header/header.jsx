@@ -4,7 +4,7 @@ function Header() {
   return (
     <>
       <header>
-        <NavBar />
+        <NavBar fill="white"/>
         <h1>Ewerything You Love About Coffee</h1>
         <div className="logo_Line">
           <span></span>
