@@ -1,10 +1,11 @@
 import "./navBar.scss";
+import {Link} from "react-router-dom"
 function NavBar(props) {
   return (
     <>
       <nav className="nav_bar">
         <div>
-          <a href="/">
+          <Link to="/">
             <svg
               width="35"
               height="35"
@@ -40,17 +41,17 @@ function NavBar(props) {
                 </clipPath>
               </defs>
             </svg>
-          </a>
+          </Link>
         </div>
         <ul className="Links">
           <li>
-            <a href="/">Coffee house</a>
+            <Link to="/">Coffee house</Link >
           </li>
           <li>
-            <a href="/ourcoffe">Our coffe</a>
+            <Link to="/ourcoffe">Our coffe</Link>
           </li>
           <li>
-            <a href="/pleasure">For your pleasure</a>
+            <Link to="/pleasure">For your pleasure</Link>
           </li>
         </ul>
       </nav>

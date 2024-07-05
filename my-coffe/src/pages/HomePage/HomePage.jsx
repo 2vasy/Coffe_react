@@ -1,12 +1,10 @@
-import Header from "../../components/header/header";
-import Footer from "../../components/footer/footer";
+
 import CoffeBeans from "../../components/UI/coffeeBeans3";
 import CardC from "../../assets/img/cards/815O9ktyfUL.png"
 import "./HomePage.scss";
 function HomePage() {
   return (
     <>
-      <Header />
       <main>
         <h1 className="title_about">About Us</h1>
         <CoffeBeans color="black" />
@@ -19,6 +17,7 @@ function HomePage() {
             shy want. Children me laughing we prospect answered followed. At it
             went is song that held help face.
           </p>
+          <br />
           <p>
             Now residence dashwoods she excellent you. Shade being under his bed
             her, Much read on as draw. Blessing for ignorant exercise any
@@ -52,7 +51,6 @@ function HomePage() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

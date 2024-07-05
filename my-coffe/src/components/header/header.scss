@@ -1,12 +1,8 @@
 
 header {
-  background: url('../../assets/img/backgrounds/MainBg.png') no-repeat center center fixed;
+  background: url('../../assets/img/backgrounds/MainBg.png') no-repeat center/cover;
 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 640px;
+
 
   h1 {
     color:#fff;
@@ -30,6 +26,7 @@ header {
     font-size: 24px;
     color:#fff;
     text-align: center;
+    padding: 20px 0;
   }
 
   button{
