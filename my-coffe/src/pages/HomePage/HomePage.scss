@@ -21,27 +21,92 @@ main{
   
   .text_about{
     text-align: center;
-    padding: 0 60px;
-    padding: 50px 0 90px;
+    padding: 90px 20px 90px;
+    margin: 0 auto;
+    max-width: 600px;
   }
 
-  .cards_items{
-    background: url('../../assets/img/backgrounds/papier-bg.png') no-repeat;
-  
-    .cards_wrapper{
+  .cards_section{
+    background: url('../../assets/img/backgrounds/papier-bg.png') no-repeat center / cover;
+    
+    .cards_items{
       display: flex;
-      justify-content: center;
-      align-items:center;
-        
-      figure{
-        display: inline-block;
-        background:#fff;
-        width: 220px;
-        height: 240px;
-        opacity: 100%;
-        border-radius: 5px; 
-      }
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 0;
 
+      .cards_items_title{
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: 400;
+        margin: 20px 0 0;
       }
+      .cards_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+        
+          
+        figure{
+          position: relative;
+          display: flex;
+          width: 180px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid #ddd;
+          padding: 10px;
+          border-radius: 10px;
+          z-index: 10;
+          
+  
+            img{
+              max-width: 100%;
+              height: auto;
+              display: block;
+            }
+  
+            figcaption{
+              margin-top: 10px;
+              color: #555;
+              font-size: 1rem;
+              text-align: center;
+              z-index: 1;
+            }
+  
+  
+            .price_container{
+              width: 100%;
+              display: flex;
+              justify-content: flex-end;
+  
+              .price{
+                background-color: rgba(255, 255, 255, 0.8); 
+                padding: 5px 10px;
+                border-radius: 5px;
+                font-size: 1rem;
+                color: #333;
+                z-index: 1;
+              }
+            }
+            
+        }
+        figure::before{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: white;
+          opacity: 65%;
+          border-radius: 10px; 
+          z-index: -1; 
+      }
+  
+        }
+    }
   }
 }
