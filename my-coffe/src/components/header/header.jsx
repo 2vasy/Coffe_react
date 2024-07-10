@@ -5,7 +5,7 @@ function Header() {
   return (
     <>
       <header>
-        <NavBar fill="white" />
+        <NavBar fill="white"/>
         <h1>Ewerything You Love About Coffee</h1>
         <CoffeBeans color="white" />
         <div className="text_title">

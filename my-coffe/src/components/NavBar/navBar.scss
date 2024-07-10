@@ -7,14 +7,16 @@ ul {
   display: flex;
   justify-content: start;
   list-style-type: none;
-  gap: 20px;
-  padding:0px;
+  padding:5px;
   li{
     a{
       text-decoration: none;
       cursor: pointer;
       color:#fff;
     }
-
+    a:hover{
+      color: rgb(38, 73, 187);
+    }
   }
+  
 }

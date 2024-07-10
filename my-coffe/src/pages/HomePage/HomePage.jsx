@@ -1,8 +1,8 @@
 
 import CoffeBeans from "../../components/UI/coffeeBeans3";
-import Solimo from "../../assets/img/cards/815O9ktyfUL.png"
-import Presto from "../../assets/img/cards/91Ryk2gKejL.png"
-import Aromistico from "../../assets/img/cards/71qBQnpQFYL.png"
+import Solimo from "../../assets/img/cards/solimo.png"
+import Presto from "../../assets/img/cards/presto.png"
+import Aromistico from "../../assets/img/cards/aromistico.png"
 import "./HomePage.scss";
 function HomePage() {
   return (
