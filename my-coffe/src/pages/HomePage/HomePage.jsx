@@ -1,9 +1,11 @@
 
 import CoffeBeans from "../../components/UI/coffeeBeans3";
-import Solimo from "../../assets/img/cards/solimo.png"
-import Presto from "../../assets/img/cards/presto.png"
-import Aromistico from "../../assets/img/cards/aromistico.png"
+import Cards from "../../components/cards/Cards";
+// import Solimo from ""
+// import Presto from "../../assets/img/cards/presto.png"
+// import Aromistico from "../../assets/img/cards/aromistico.png"
 import "./HomePage.scss";
+import { db } from "../../db/db";
 function HomePage() {
   return (
       <>
@@ -32,33 +34,9 @@ function HomePage() {
           <div className="cards_items">
             <h1 className="cards_items_title">Our best</h1>
             <div className="cards_wrapper">
-              <figure className="figure">
-                <img src={Solimo} className="figure-img img-fluid rounded" alt="..." />
-                <figcaption className="figure-caption text-right">
-                  Solimo Coffee Beans 2 kg
-                </figcaption>
-                <div className="price_container">
-                  <div className="price">10.73$</div>
-                </div>
-              </figure>
-              <figure className="figure">
-                <img src={Presto} className="figure-img img-fluid rounded" alt="..." />
-                <figcaption className="figure-caption text-right">
-                  Presto Coffee Beans 1 kg
-                </figcaption>
-                <div className="price_container">
-                  <div className="price">15.99$</div>
-                </div>
-              </figure>
-              <figure className="figure">
-                <img src={Aromistico} className="figure-img img-fluid rounded" alt="..." />
-                <figcaption className="figure-caption text-right">
-                  AROMISTICO Coffee 1 kg  
-                </figcaption>
-                <div className="price_container">
-                  <div className="price">6.99$</div>
-                </div>
-              </figure>
+              {db.cards.map((card) => (
+                <Cards image={card.image} name={card.name} price={card.price} key={card.id}/>
+              ))}
             </div>
           </div>
         </section>
