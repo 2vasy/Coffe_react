@@ -1,4 +1,5 @@
 import NavBar from "../NavBar/navBar";
+import Button from "../UI/Button";
 import CoffeBeans from "../UI/coffeeBeans3";
 import "./header.scss";
 function Header() {
@@ -11,7 +12,7 @@ function Header() {
         <div className="text_title">
           <p>We makes every dayfull of energy and taste</p>
           <p>Want to try our beans?</p>
-          <button className="more">More</button>
+          <Button name="More"/>
         </div>
       </header>
     </>
