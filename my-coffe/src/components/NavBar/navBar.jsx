@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import { db } from "../../db/db";
 import NavBarItems from "./NavBarItems";
 import Logo from "../NavBar/Logo";
+
 function NavBar({fill}) {
+
   return (
     <>
       <nav className="nav_bar">
@@ -13,7 +15,11 @@ function NavBar({fill}) {
           </Link>
         </div>
         {db.nav.map((item) => (
-          <NavBarItems name={item.name} path={item.path} key={item.id} />
+          <NavBarItems
+          key={item.id}  
+          name={item.name} 
+          path={item.path}
+          />
         ))}
       </nav>
     </>

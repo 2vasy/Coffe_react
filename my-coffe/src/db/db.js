@@ -1,6 +1,11 @@
 import solimo from "../assets/img/cards/solimo.png";
 import presto from "../assets/img/cards/presto.png";
 import aromistico from "../assets/img/cards/aromistico.png";
+// import mainBg from "../assets/img/backgrounds/MainBg.png"
+// import ourCoffeBg from "../assets/img/backgrounds/coffe-bg.png"
+// import pleasure from "../assets/img/backgrounds/pleasure-bg.png"
+
+
 
 export const db = {
   nav:[
@@ -66,5 +71,10 @@ export const db = {
       },
     ],
   },
+  // header:[
+  //   {id: 1, name:'Ewerything You Love About Coffee', background:c, inactive: true},
+  //   {id: 2, name:'ourKoffe', background:`url(${ourCoffeBg})no-repeat center/cover`, inactive: false},
+  //   // {id: 3, name:'pleasure', background:`url(${pleasure})no-repeat center/cover`, inactive: false},
+  // ]
 }
 
