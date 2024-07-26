@@ -15,19 +15,29 @@ const backgroundImages = {
 const Header = () => {
   const location = useLocation();
   const backgroundImage = backgroundImages[location.pathname] || '../../assets/img/backgrounds/MainBg.png';
-
-  return (
+  if(location.pathname ==='/'){
+    return (
+        <header style={{
+          background: `${backgroundImage}`}}>
+          <NavBar fill="white"/>
+          <h1>kuuiluil</h1>
+          <CoffeBeans color="white" />
+          <div className="text_title">
+            <p>We makes every dayfull of energy and taste</p>
+            <p>Want to try our beans?</p>
+            <Button name="More"/>
+          </div>
+        </header>
+    );
+  }else{
+    return (
       <header style={{
         background: `${backgroundImage}`}}>
         <NavBar fill="white"/>
         <h1>kuuiluil</h1>
-        <CoffeBeans color="white" />
-        <div className="text_title">
-          <p>We makes every dayfull of energy and taste</p>
-          <p>Want to try our beans?</p>
-          <Button name="More"/>
-        </div>
       </header>
-  );
+      )
+    }
+
 }
 export default Header;
